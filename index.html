@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            background: white;
+            margin: auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563eb;
+        }
+
+        .foto {
+            text-align: center;
+        }
+
+        .foto img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2563eb;
+        }
+
+        h2 {
+            color: #2563eb;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
+            margin-top: 25px;
+        }
+
+        .data {
+            margin: 12px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .label {
+            width: 160px;
+            font-weight: bold;
+        }
+
+        .tombol {
+            display: block;
+            margin: 25px auto 0;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .tombol:hover {
+            background: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 25px;
+            color: gray;
+            font-size: 13px;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                box-shadow: none;
+            }
+
+            .tombol {
+                display: none;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>BIODATA PRIBADI</h1>
+
+    <div class="foto">
+        <img src="profil.jpg" alt="Foto Profil">
+        <h3>Nama Lengkap Kamu</h3>
+        <p>Pelajar</p>
+    </div>
+
+    <h2>Identitas Pribadi</h2>
+
+    <div class="data">
+        <span class="label">Nama Lengkap</span>
+        <span>: Nama Kamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Nama Panggilan</span>
+        <span>: Nama Panggilan</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Tempat Lahir</span>
+        <span>: Kota Kelahiran</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Tanggal Lahir</span>
+        <span>: 01 Januari 2000</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Jenis Kelamin</span>
+        <span>: Laki-laki / Perempuan</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Agama</span>
+        <span>: Agama Kamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Alamat</span>
+        <span>: Alamat Kamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Kewarganegaraan</span>
+        <span>: Indonesia</span>
+    </div>
+
+    <h2>Pendidikan</h2>
+
+    <div class="data">
+        <span class="label">Sekolah</span>
+        <span>: Nama Sekolah</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Kelas</span>
+        <span>: Kelas Kamu</span>
+    </div>
+
+    <h2>Informasi Tambahan</h2>
+
+    <div class="data">
+        <span class="label">Hobi</span>
+        <span>: Membaca, Olahraga</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Cita-cita</span>
+        <span>: Cita-cita Kamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Keahlian</span>
+        <span>: Keahlian Kamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Prestasi</span>
+        <span>: Prestasi Kamu</span>
+    </div>
+
+    <h2>Tentang Saya</h2>
+
+    <p>
+        Halo! Perkenalkan nama saya Nama Kamu.
+        Saya adalah seorang pelajar yang memiliki semangat
+        belajar, suka mencoba hal baru, dan ingin meraih
+        cita-cita saya.
+    </p>
+
+    <h2>Kontak</h2>
+
+    <div class="data">
+        <span class="label">Email</span>
+        <span>: emailkamu@gmail.com</span>
+    </div>
+
+    <div class="data">
+        <span class="label">Instagram</span>
+        <span>: @instagramkamu</span>
+    </div>
+
+    <div class="data">
+        <span class="label">WhatsApp</span>
+        <span>: Nomor WhatsApp Kamu</span>
+    </div>
+
+    <button class="tombol" onclick="window.print()">
+        Cetak Biodata
+    </button>
+
+    <footer>
+        &copy; 2026 Biodata Pribadi
+    </footer>
+
+</div>
+
+</body>
+</html>
